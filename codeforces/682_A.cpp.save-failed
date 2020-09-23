@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+
+int main()
+{
+    long long x,y,i,j,n,m,ans;
+
+    scanf("%lld %lld",&n,&m);
+    ans = 0;
+
+    for(x = 1 ; x <= n ; x++)
+    {
+        for(y = 1 ; y <= m ; y++)
+        {
+            if((x+y) % 5 == 0) ans++;
+        }
+    }
+
+    printf("%lld",ans);
+
+    return 0;
+}
+
